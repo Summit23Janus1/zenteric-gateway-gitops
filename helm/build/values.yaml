@@ -1,0 +1,15 @@
+app:
+  name: zenteric-poi-gateway-app
+  namespace: zenteric
+  cluster: .apps.summit23rock.n26o.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/Summit23Janus1/zenteric-gateway
+  org: Summit23Janus1
+  name: zenteric-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: zenteric/poi-gateway-app
+  tag: latest
